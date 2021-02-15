@@ -1,6 +1,5 @@
-const API_KEY = 'YOUR API KEY HERE'
+const API_KEY = process.env.REACT_APP_SECRET_KEY
 const API_BASE = 'https://api.themoviedb.org/3'
-
 
 const basicFetch = async (endpoint) => {
     const req = await fetch(`${API_BASE}${endpoint}`)
